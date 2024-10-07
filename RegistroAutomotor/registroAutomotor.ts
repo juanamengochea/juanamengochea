@@ -26,15 +26,15 @@ export class RegistroAutomotor {
     }
 
     obtenerTodosLosAutos(): string {
-        return this.autos.map(auto => auto.getAuto()).join("\n");
+        return this.autos.map(auto => auto.getVehiculo()).join("\n");
     }
 
     obtenerTodasLasMotos(): string {
-        return this.motos.map(moto => moto.getMoto()).join("\n");
+        return this.motos.map(moto => moto.getVehiculo()).join("\n");
     }
 
     obtenerTodosLosCamiones(): string {
-        return this.camiones.map(camion => camion.getCamion()).join("\n");
+        return this.camiones.map(camion => camion.getVehiculo()).join("\n");
     }
 
     obtenerTodosLosVehiculos(): string {
